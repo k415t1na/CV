@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Kristina Myftaraga</title>
+
+    <style>
+
+        .body{
+            background-color: rgb(173, 169, 169);
+        }
+        .all{
+            position: static;
+            display: grid;
+            height: auto;
+            width: 100%;
+            min-height: 799px;
+            grid-template-rows: min-content min-content min-content min-content 1fr;
+            grid-template-columns: 100%;
+            padding-bottom: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .left{
+            position: relative;
+            margin: 135px 0px 0 calc((100% - 980px) * 0.5);
+            left: 9px;
+            grid-area: 1 / 1 / 6 / 2;
+            justify-self: start;
+            align-self: start;
+        }
+
+        .right{
+            /* text-align: center; */
+            position: relative;
+            margin: 171px 0px 24px calc((100% - 980px) * 0.5);
+            left: 522px;
+            grid-area: 1 / 1 / 2 / 2;
+            justify-self: start;
+            align-self: start;
+            width: 40%;
+        }
+
+        img{
+            width: 480px;
+            display: block;
+            border-radius: 50%;
+            
+        }
+        
+        .greeting{
+            font-size: 62px;
+            font-weight: 700;
+        }
+        .subhead{
+            font-size: 32px;
+            font-weight: 300;
+        }
+
+        .projects{
+            background-color: red;
+        }
+
+        .resume{
+            background-color: rgb(52, 129, 218);
+        }
+
+        .contact{
+            background-color: rgb(73, 202, 47);
+        }
+
+        .showcase{
+            display: flex;
+        }
+
+        .showcase p{
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            font-size: 24px;
+            text-align: center;
+            font-weight: 600;
+            border: 1px solid black;
+        }
+
+        .showcase p:hover{
+            background-color: rgb(179, 189, 177);
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <div class="all">
+        <div class="left">
+            <img alt='me' src="./images/me.png"/>
+        </div>
+        <div class="right">
+
+            <p class="greeting">Hello</p>
+
+            <p class="subhead">A bit about me</p>
+
+            <p class="description">
+                I'm a paragraph. Click here to add your own text and edit me. 
+                I’m a great place for you to tell a story and let your users know a 
+                little more about you.
+            </p>
+            <div class="showcase">
+                <p class="projects"> Projects</p>
+                <p class="resume">Resume</p>
+                <p class="contact">Contact</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
