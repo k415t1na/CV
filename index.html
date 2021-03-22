@@ -20,7 +20,7 @@
             grid-template-columns: 100%;
             padding-bottom: 0px;
             box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Madefor,Helvetica Neue,Helvetica,Arial,メイリオ,meiryo,ヒラギノ角ゴ pro w3,hiragino kaku gothic pro,sans-serif;
         }
         .left{
             position: relative;
@@ -44,31 +44,50 @@
 
         img{
             width: 480px;
+            height: 480px;
             display: block;
             border-radius: 50%;
+            filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */    
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            filter: grayscale(100%);
+            filter: rgb(46, 46, 46); /* IE 6-9 */
             
         }
         
+        img:hover {
+            -webkit-filter: none;
+            -moz-filter: none;
+            -ms-filter: none;
+            filter: none;
+}
+
         .greeting{
             font-size: 62px;
             font-weight: 700;
+            margin-bottom: -5px;
         }
-        .subhead{
+        /* .subhead{
             font-size: 32px;
+            font-weight: 400;
+            
+        } */
+        .description{
+            font-size: 18px;
             font-weight: 300;
         }
-
-        .projects{
-            background-color: red;
-        }
+        /* .projects{
+            background-color: orange;
+        } */
 
         .resume{
-            background-color: rgb(52, 129, 218);
+            background-color: orange;
         }
 
-        .contact{
-            background-color: rgb(73, 202, 47);
-        }
+        /* .contact{
+            background-color: rgb(112, 209, 210);
+        } */
 
         .showcase{
             display: flex;
@@ -89,8 +108,12 @@
         }
 
         .showcase p:hover{
-            background-color: rgb(179, 189, 177);
+            background-color: rgb(255, 255, 255);
 
+        }
+        a{
+            text-decoration: none;
+            color: black;
         }
 
     </style>
@@ -101,23 +124,22 @@
 
     <div class="all">
         <div class="left">
-            <img alt='me' src="./images/me.png"/>
+            <img alt='me' src="./images/5.jpeg"/>
         </div>
         <div class="right">
 
             <p class="greeting">Hello</p>
 
-            <p class="subhead">A bit about me</p>
+            <!-- <p class="subhead">A Bit About Me</p> -->
 
-            <p class="description">
-                I'm a paragraph. Click here to add your own text and edit me. 
-                I’m a great place for you to tell a story and let your users know a 
-                little more about you.
-            </p>
+            <p class="description">I'm Kristina. I am a junior student at American University in Bulgaria, double majoring in Business Administration and Computer Science. </p>
+            <p class="description">I have a major interest in UI/UX design.</p>
+            <p class="description">I am a very goal oriented person and a fast learner.</p>
             <div class="showcase">
-                <p class="projects"> Projects</p>
-                <p class="resume">Resume</p>
-                <p class="contact">Contact</p>
+               <a href="./docs/cv.pdf"><p class="resume"> Resume</p> </a> 
+                <!-- <p class="projects">Projects</p> -->
+                <iframe src="https://cdn.flipsnack.com/widget/v2/widget.html?hash=uparf83xu3" width="100%" height="300px" seamless="seamless" scrolling="no" frameBorder="0" allowFullScreen></iframe>
+
             </div>
         </div>
     </div>
