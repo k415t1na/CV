@@ -128,7 +128,7 @@
             left:-10px;
             height:20px;
             width:100%;
-            background: #b1b1b1;
+            background: #ffb703;
             transform: .5s;
             transform: rotate(0deg) skewX(-45deg);
         }
@@ -147,61 +147,63 @@
         }
 
         ul li:hover:nth-child(1) a{
-            background: #3b5998;
+            background: #003049;
         }
         ul li:hover:nth-child(1) a:before{
-            background: #365492;
+            background: #003049;
         }
         ul li:hover:nth-child(1) a:after{
-            background: #4a69ad;
+            background: #003049;
         }
 
         ul li:hover:nth-child(2) a{
-            background: #0077b5	;
+            background: #d62828	;
         }
         ul li:hover:nth-child(2) a:before{
-            background: #0077b5	;
+            background: #d62828	;
         }
         ul li:hover:nth-child(2) a:after{
-            background: #0077b5	;
+            background: #d62828	;
         }
 
         ul li:hover:nth-child(3) a{
-            background: #720e9e;
+            background: #f77f00;
         }
         ul li:hover:nth-child(3) a:before{
-            background: #720e9e;
+            background: #f77f00;
         }
         ul li:hover:nth-child(3) a:after{
-            background: #720e9e;
+            background: #f77f00;
         }
 
         ul li:hover:nth-child(4) a{
-            background: #e4405f;
+            background: #fcbf49;
         }
         ul li:hover:nth-child(4) a:before{
-            background: #d81c3f;
+            background: #fcbf49;
         }
         ul li:hover:nth-child(4) a:after{
-            background: #e46880;
+            background: #fcbf49;
         }
 
         @media (max-width: 930px) {
             .content {
                 display: block;
             }
-            .icon-bar{
-                display: none;
-            }
             .right{
                 padding:0;
                 text-align: center;
             }
             ul{
-                display: block;
                 margin: auto;
                 margin-top: 12%;
-                margin-left: 20%;
+                max-width: 40%;
+                min-width: 30px;
+                margin-left: 0.5rem;
+            }
+
+            ul li{
+                width: 50%;
             }
         }
     </style>
