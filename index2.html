@@ -1,0 +1,258 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icons library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>CVKrisi</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300&display=swap');    
+    
+        .me{
+            /* Position and size */
+            width: 50%;
+            min-width: 400px;
+            max-width: 500px;
+            border-radius: 50%;
+            margin-top: 10%;
+            filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+
+            
+        }
+
+        /* Whole div with image and text */
+        .content {
+            margin-top: 1%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        /* Image div */
+        .left {
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Text div */
+
+        .right{
+            margin-top: 7%;
+            flex: 1;
+            font-size: 18px;
+            padding-right: 10%;
+        }
+
+        .greeting{
+            font-weight: bold !important;
+            font-size: 50px;
+        }
+        
+       
+        /* Navdiv  */
+        .nav{
+            display: flex;
+            flex-direction: row;
+        }
+        /* Name in Nav div  */
+        .nav p{
+            flex: 1;
+        }
+
+        /* On smaller screen */
+       
+
+        /* Icons stuff */
+        ul {
+            display:flex;
+            margin:0;
+            padding:0;
+            margin-top: 5%;
+            margin-left: 15%;
+        }
+
+        ul li {
+            list-style:none;
+            margin:0 5px;
+        }
+
+        ul li a .fa {
+            font-size: 40px;
+            color: #262626;
+            line-height:80px;
+            transition: .5s;
+            padding-right: 14px;
+        }
+
+        ul li a span {
+            padding:0;
+            margin:0;
+            /* position:absolute; */
+            top: 30px;
+            color: #262626;
+            letter-spacing: 4px;
+            transition: .5s;
+        }
+
+        ul li a {
+            text-decoration: none;
+            /* display:absolute; */
+            display:block;
+            width:210px;
+            height:80px;
+            background: #fff;
+            text-align:left;
+            padding-left: 20px;
+            transform: rotate(-30deg) skew(25deg) translate(0,0);
+            transition:.5s;
+            box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+        }
+        ul li a:before {
+            content: '';
+            /* position: absolute; */
+            top:10px;
+            left:-20px;
+            height:100%;
+            width:20px;
+            background: #b1b1b1;
+            transform: .5s;
+            transform: rotate(0deg) skewY(-45deg);
+        }
+        ul li a:after {
+            content: '';
+            position: absolute;
+            bottom:-20px;
+            left:-10px;
+            height:20px;
+            width:100%;
+            background: #b1b1b1;
+            transform: .5s;
+            transform: rotate(0deg) skewX(-45deg);
+        }
+
+        ul li a:hover {
+            transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
+            box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+        }
+
+        ul li:hover .fa {
+            color:#fff;
+        }
+
+        ul li:hover span {
+            color:#fff;
+        }
+
+        ul li:hover:nth-child(1) a{
+            background: #3b5998;
+        }
+        ul li:hover:nth-child(1) a:before{
+            background: #365492;
+        }
+        ul li:hover:nth-child(1) a:after{
+            background: #4a69ad;
+        }
+
+        ul li:hover:nth-child(2) a{
+            background: #0077b5	;
+        }
+        ul li:hover:nth-child(2) a:before{
+            background: #0077b5	;
+        }
+        ul li:hover:nth-child(2) a:after{
+            background: #0077b5	;
+        }
+
+        ul li:hover:nth-child(3) a{
+            background: #720e9e;
+        }
+        ul li:hover:nth-child(3) a:before{
+            background: #720e9e;
+        }
+        ul li:hover:nth-child(3) a:after{
+            background: #720e9e;
+        }
+
+        ul li:hover:nth-child(4) a{
+            background: #e4405f;
+        }
+        ul li:hover:nth-child(4) a:before{
+            background: #d81c3f;
+        }
+        ul li:hover:nth-child(4) a:after{
+            background: #e46880;
+        }
+
+        @media (max-width: 930px) {
+            .content {
+                display: block;
+            }
+            .icon-bar{
+                display: none;
+            }
+            .right{
+                padding:0;
+                text-align: center;
+            }
+            ul{
+                display: block;
+                margin: auto;
+                margin-top: 12%;
+                margin-left: 20%;
+            }
+        }
+    </style>
+</head>
+<body style="font-family: 'Work Sans', sans-serif;">
+    <div class="content">
+        
+        <div class="left"> 
+            <img alt='me' class="me" src="./images/5.jpeg"/>
+        </div>
+
+        <div class="right">
+            
+            <p class="greeting">Hello</p>
+
+            <!-- <p class="subhead">A Bit About Me</p> -->
+
+            <p class="description">I'm Kristina. I am a junior student at American University in Bulgaria, double majoring in Business Administration and Computer Science. </p>
+            <p class="description">I have a major interest in UI/UX design.</p>
+            <p class="description">I am a very goal oriented person and a fast learner.</p>
+        </div>
+
+    </div>
+    <div>
+
+    <ul>
+        <li>
+          <a href="https://www.facebook.com/kristinamyftaraga1">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <span> - Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/kristinamyftaraga/">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+            <span> - LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:kristina.myftaraga@yahoo.com">
+            <i class="fa fa-yahoo" aria-hidden="true"></i>
+            <span> - Yahoo</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/xyas_art/">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <span> - Instagram</span>
+          </a>
+        </li>
+        </ul>
+    </div>
+</body>
+</html>
